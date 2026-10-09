@@ -1,0 +1,34 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>About · Criteria Humana</title><meta name="description" content="What this blog is and why I write it."><link rel="canonical" href="https://criteriahumana.github.io/en/about/"><link rel="icon" type="image/svg+xml" href="/favicon.svg"><!-- Iconos para móvil (iPhone y Android). Se generan desde el logotipo: ver README. --><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="manifest" href="/site.webmanifest"><link rel="alternate" type="application/rss+xml" title="Criteria Humana" href="/en/rss.xml"><link rel="alternate" hreflang="en" href="https://criteriahumana.github.io/en/about/"><link rel="alternate" hreflang="es" href="https://criteriahumana.github.io/sobre/"><link rel="sitemap" href="/sitemap-index.xml"><meta property="og:site_name" content="Criteria Humana"><meta property="og:title" content="About"><meta property="og:description" content="What this blog is and why I write it."><meta property="og:type" content="website"><meta property="og:url" content="https://criteriahumana.github.io/en/about/"><meta name="twitter:card" content="summary"><script async data-goatcounter="https://criteriahumana.goatcounter.com/count" src="https://gc.zgo.at/count.js"></script><script>
+      // Aplica el modo elegido antes de pintar la página, para que no parpadee.
+      try {
+        const theme = localStorage.getItem('theme');
+        if (theme === 'light' || theme === 'dark') document.documentElement.dataset.theme = theme;
+      } catch {}
+    </script><link rel="stylesheet" href="/_astro/Base.FQKCQAOe.css"></head><body><a class="skip" href="#contenido">Skip to content</a><header class="site-header column"><a class="brand" href="/en/"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M19.28 5.89A9.5 9.5 0 1 0 19.28 18.11" stroke="currentColor"></path><circle cx="14.5" cy="12" r="2.6" fill="var(--accent)"></circle></svg>Criteria Humana</a><nav class="site-nav"><a href="/en/">Articles</a><a href="/en/concepts/">Concepts</a><a href="/en/about/" aria-current="page">About</a></nav><div class="site-tools"><span class="lang-switch" role="group" aria-label="Language"><a href="/sobre/" hreflang="es" lang="es" title="Leer en español">ES</a><span aria-current="true">EN</span></span><button class="theme-toggle" type="button" aria-label="Dark mode" aria-pressed="false" hidden><svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.25" fill="none" stroke="currentColor" stroke-width="1.5"></circle><path d="M8 1.75a6.25 6.25 0 0 1 0 12.5z" fill="currentColor"></path></svg></button></div></header><main id="contenido" class="column"><header class="post-header"><h1 class="page-title">About</h1></header><div class="prose"><p>Before it is a blog, this is a commitment to myself.</p>
+<p>I do more and more with the help of language models, and I noticed I was also handing over the part I most wanted to do myself: thinking, reading, researching and writing. This blog is how I set time aside for that. Making it public is what keeps me at it.</p>
+<p>I don’t write as an expert. In my day-to-day I am not especially rational or strategic, and writing is how I work on that. If it helps me, I suspect it will help someone else.</p>
+<h2 id="what-it-is-about">What it is about</h2>
+<p>Trying to understand what is around me: questioning it, asking things of it, trying to explain it. What matters most to me is that process, more than ending up knowing something. When I force myself to explain a thing is when I take it in and really understand it, instead of just knowing about it.</p>
+<p>What I am after is judgement: knowing what deserves attention, what to ask, what to believe and what to do next. That takes me to different places. How we make decisions, small and large, and which ideas from strategy or economics help us make them better. How an opinion forms and what ought to change it. How attention, memory and learning work, and what technology is doing to them. Creativity, in music and beyond it. And what is still worth doing yourself now that almost everything can be delegated.</p>
+<p>My thesis is that this kind of judgement is antifragile to AI. I may be wrong; writing this is also a way of finding out.</p>
+<h2 id="how-it-is-made">How it is made</h2>
+<p>The topics, the research and the writing are mine. I try to make each article useful in practice and readable without being a specialist.</p>
+<p>I write in Spanish and translate into English.</p></div></main><footer class="site-footer column">© 2026 Criteria Humana · <a href="/en/rss.xml">RSS</a></footer><script>
+      // Botón de modo claro/oscuro. Sin JavaScript no se muestra y el modo sigue al sistema.
+      (() => {
+        const button = document.querySelector('.theme-toggle');
+        const root = document.documentElement;
+        const current = () =>
+          root.dataset.theme ?? (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+        const sync = () => button.setAttribute('aria-pressed', String(current() === 'dark'));
+        button.hidden = false;
+        sync();
+        button.addEventListener('click', () => {
+          root.dataset.theme = current() === 'dark' ? 'light' : 'dark';
+          try {
+            localStorage.setItem('theme', root.dataset.theme);
+          } catch {}
+          sync();
+        });
+      })();
+    </script></body></html>

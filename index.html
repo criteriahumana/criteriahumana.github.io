@@ -1,0 +1,25 @@
+<!DOCTYPE html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Criteria Humana</title><meta name="description" content="Preguntas, reflexiones y lo que aprendo por el camino."><link rel="canonical" href="https://criteriahumana.github.io/"><link rel="icon" type="image/svg+xml" href="/favicon.svg"><!-- Iconos para móvil (iPhone y Android). Se generan desde el logotipo: ver README. --><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="manifest" href="/site.webmanifest"><link rel="alternate" type="application/rss+xml" title="Criteria Humana" href="/rss.xml"><link rel="alternate" hreflang="es" href="https://criteriahumana.github.io/"><link rel="alternate" hreflang="en" href="https://criteriahumana.github.io/en/"><link rel="sitemap" href="/sitemap-index.xml"><meta property="og:site_name" content="Criteria Humana"><meta property="og:title" content="Criteria Humana"><meta property="og:description" content="Preguntas, reflexiones y lo que aprendo por el camino."><meta property="og:type" content="website"><meta property="og:url" content="https://criteriahumana.github.io/"><meta name="twitter:card" content="summary"><script async data-goatcounter="https://criteriahumana.goatcounter.com/count" src="https://gc.zgo.at/count.js"></script><script>
+      // Aplica el modo elegido antes de pintar la página, para que no parpadee.
+      try {
+        const theme = localStorage.getItem('theme');
+        if (theme === 'light' || theme === 'dark') document.documentElement.dataset.theme = theme;
+      } catch {}
+    </script><link rel="stylesheet" href="/_astro/Base.FQKCQAOe.css"></head><body><a class="skip" href="#contenido">Saltar al contenido</a><header class="site-header column"><a class="brand" href="/"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M19.28 5.89A9.5 9.5 0 1 0 19.28 18.11" stroke="currentColor"></path><circle cx="14.5" cy="12" r="2.6" fill="var(--accent)"></circle></svg>Criteria Humana</a><nav class="site-nav"><a href="/" aria-current="page">Artículos</a><a href="/conceptos/">Conceptos</a><a href="/sobre/">Sobre el blog</a></nav><div class="site-tools"><span class="lang-switch" role="group" aria-label="Idioma"><span aria-current="true">ES</span><a href="/en/" hreflang="en" lang="en" title="Read in English">EN</a></span><button class="theme-toggle" type="button" aria-label="Modo oscuro" aria-pressed="false" hidden><svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.25" fill="none" stroke="currentColor" stroke-width="1.5"></circle><path d="M8 1.75a6.25 6.25 0 0 1 0 12.5z" fill="currentColor"></path></svg></button></div></header><main id="contenido" class="column"><div class="intro"><p>Preguntas, reflexiones y lo que aprendo por el camino.</p><a href="/sobre/">Por qué escribo esto</a></div><p class="meta">Todavía no hay artículos publicados.</p></main><footer class="site-footer column">© 2026 Criteria Humana · <a href="/rss.xml">RSS</a></footer><script>
+      // Botón de modo claro/oscuro. Sin JavaScript no se muestra y el modo sigue al sistema.
+      (() => {
+        const button = document.querySelector('.theme-toggle');
+        const root = document.documentElement;
+        const current = () =>
+          root.dataset.theme ?? (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+        const sync = () => button.setAttribute('aria-pressed', String(current() === 'dark'));
+        button.hidden = false;
+        sync();
+        button.addEventListener('click', () => {
+          root.dataset.theme = current() === 'dark' ? 'light' : 'dark';
+          try {
+            localStorage.setItem('theme', root.dataset.theme);
+          } catch {}
+          sync();
+        });
+      })();
+    </script></body></html>

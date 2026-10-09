@@ -1,0 +1,25 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Concepts · Criteria Humana</title><meta name="description" content="The ideas I write about and how they relate to each other. The map grows with every article."><link rel="canonical" href="https://criteriahumana.github.io/en/concepts/"><link rel="icon" type="image/svg+xml" href="/favicon.svg"><!-- Iconos para móvil (iPhone y Android). Se generan desde el logotipo: ver README. --><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="manifest" href="/site.webmanifest"><link rel="alternate" type="application/rss+xml" title="Criteria Humana" href="/en/rss.xml"><link rel="alternate" hreflang="en" href="https://criteriahumana.github.io/en/concepts/"><link rel="alternate" hreflang="es" href="https://criteriahumana.github.io/conceptos/"><link rel="sitemap" href="/sitemap-index.xml"><meta property="og:site_name" content="Criteria Humana"><meta property="og:title" content="Concepts"><meta property="og:description" content="The ideas I write about and how they relate to each other. The map grows with every article."><meta property="og:type" content="website"><meta property="og:url" content="https://criteriahumana.github.io/en/concepts/"><meta name="twitter:card" content="summary"><script async data-goatcounter="https://criteriahumana.goatcounter.com/count" src="https://gc.zgo.at/count.js"></script><script>
+      // Aplica el modo elegido antes de pintar la página, para que no parpadee.
+      try {
+        const theme = localStorage.getItem('theme');
+        if (theme === 'light' || theme === 'dark') document.documentElement.dataset.theme = theme;
+      } catch {}
+    </script><link rel="stylesheet" href="/_astro/Base.FQKCQAOe.css"></head><body><a class="skip" href="#contenido">Skip to content</a><header class="site-header column"><a class="brand" href="/en/"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M19.28 5.89A9.5 9.5 0 1 0 19.28 18.11" stroke="currentColor"></path><circle cx="14.5" cy="12" r="2.6" fill="var(--accent)"></circle></svg>Criteria Humana</a><nav class="site-nav"><a href="/en/">Articles</a><a href="/en/concepts/" aria-current="page">Concepts</a><a href="/en/about/">About</a></nav><div class="site-tools"><span class="lang-switch" role="group" aria-label="Language"><a href="/conceptos/" hreflang="es" lang="es" title="Leer en español">ES</a><span aria-current="true">EN</span></span><button class="theme-toggle" type="button" aria-label="Dark mode" aria-pressed="false" hidden><svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.25" fill="none" stroke="currentColor" stroke-width="1.5"></circle><path d="M8 1.75a6.25 6.25 0 0 1 0 12.5z" fill="currentColor"></path></svg></button></div></header><main id="contenido" class="column"><header class="post-header"><h1 class="page-title">Concepts</h1><p class="lede">The ideas I write about and how they relate to each other. The map grows with every article.</p></header><p class="meta">No concepts yet.</p></main><footer class="site-footer column">© 2026 Criteria Humana · <a href="/en/rss.xml">RSS</a></footer><script>
+      // Botón de modo claro/oscuro. Sin JavaScript no se muestra y el modo sigue al sistema.
+      (() => {
+        const button = document.querySelector('.theme-toggle');
+        const root = document.documentElement;
+        const current = () =>
+          root.dataset.theme ?? (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+        const sync = () => button.setAttribute('aria-pressed', String(current() === 'dark'));
+        button.hidden = false;
+        sync();
+        button.addEventListener('click', () => {
+          root.dataset.theme = current() === 'dark' ? 'light' : 'dark';
+          try {
+            localStorage.setItem('theme', root.dataset.theme);
+          } catch {}
+          sync();
+        });
+      })();
+    </script></body></html>
